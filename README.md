@@ -12,7 +12,7 @@
 If you want to setup fullnode manually follow the steps below
 
 ## Setting up vars
-Here you have to put name of your moniker (validator) that will be visible in explorer
+Here you have to put name of your validator that will be visible in explorer
 ```
 NODENAME=<MONIKER_NAME>
 ```
