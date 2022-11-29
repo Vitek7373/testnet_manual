@@ -38,7 +38,6 @@ sudo rm -rf $HOME/.rebusd/data/tx_index.db
 ```
 
 ### Create wallet
-```
 To create new wallet you can use command below. Don’t forget to save the mnemonic
 ```
 rebusd keys add $WALLET
