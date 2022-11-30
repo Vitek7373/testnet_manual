@@ -1,5 +1,5 @@
 <p style="font-size:14px" align="right">
-<a href="https://discord.gg/JqQNcwff2e" target="_blank">Join Rebus Discord <img src="https://github.com/Vitek7373/testnet_manual/blob/main/rebuslogo.png" width="30"/></a>
+<a href="https://discord.gg/rebuschain" target="_blank">Join Rebus Discord <img src="https://github.com/Vitek7373/testnet_manual/blob/main/rebuslogo.png" width="30"/></a>
 </p>
 
 
