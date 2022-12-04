@@ -6,8 +6,6 @@
   <img height="200" height="auto" src="https://github.com/Vitek7373/testnet_manual/blob/main/transformerslogo.png">
 </p>
 
-
-
      Transformers Chain is a high-performance distributed system with continuously scalable transaction capability, based on a special Raindrop consensus protocol (RDCP), which realises the ability of multiple block producers to process chain transactions in parallel, and the concurrent number of its block producers can be continuously increased with the scale of the network, through its incentive layer protocol network realises a decentralised free development state.
 
 #  Transformers node setup for Testnet
