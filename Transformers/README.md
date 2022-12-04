@@ -102,9 +102,6 @@ input ToAddr: 1vkS46QffeM4sDMBBjuJBiVkMQKY7Z8Tu
 # Enter the transaction amount
 input amount: 10
 
-```
-uptickd keys list
-```
 
 ## Next, make a backup of the key file
 The wallet file is called <address>.private and lies:
