@@ -104,7 +104,7 @@ input amount: 10
 
 
 ## Next, make a backup of the key file
-The wallet file is called <address>.private and lies:
+The wallet file is called 153VtN5V2pG....5VVtN5.private and lies:
 ```
 cd $HOME/.transformers/cert
 ```
