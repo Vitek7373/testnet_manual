@@ -15,7 +15,8 @@ Official documentation:
 Explorer:
 >-  [https://explorer.humans.zone/humans-testnet/)
 
-You can follow my [detailed guide](https://github.com/Vitek7373/testnet_manual/blob/main/Humans/Installation.md)
+
+## You can follow my [detailed guide](https://github.com/Vitek7373/testnet_manual/blob/main/Humans/Installation.md)
 
 ## Hardware Requirements
 Like any Cosmos-SDK chain, the hardware requirements are pretty modest.
