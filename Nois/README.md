@@ -1,11 +1,11 @@
 <p style="font-size:14px" align="right">
-<a href="https://discord.gg/fFnQQnhw8z" target="_blank">Join Nois discord <img src="" width="30"/></a>
+<a href="https://discord.gg/fFnQQnhw8z" target="_blank">Join Nois discord <img src="https://github.com/Vitek7373/testnet_manual/blob/main/Nois/noislogo.png" width="25"/></a>
 </p>
 
 
 
 <p align="center">
-  <img height="100" height="auto" src="">
+  <img height="120" height="auto" src="https://github.com/Vitek7373/testnet_manual/blob/main/Nois/noislogo.png">
 </p>
 
 # Nois node setup for testnet — nois-testnet-004
