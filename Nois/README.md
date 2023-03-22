@@ -35,7 +35,7 @@ Like any Cosmos-SDK chain, the hardware requirements are pretty modest.
 
 
 ### Option (manual)
-You can follow [manual guide](https://github.com/nois/manual_install.md) if you better prefer setting up node manually
+You can follow [manual guide](https://github.com/Vitek7373/testnet_manual/blob/main/Nois/node_install.md) if you better prefer setting up node manually
 
 ## Post installation
 
