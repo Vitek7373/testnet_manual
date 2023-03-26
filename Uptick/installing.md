@@ -23,7 +23,7 @@ echo "export NODENAME=$NODENAME" >> $HOME/.bash_profile
 if [ ! $WALLET ]; then
 	echo "export WALLET=wallet" >> $HOME/.bash_profile
 fi
-echo "export UPTICK_CHAIN_ID=uptick_7000-2" >> $HOME/.bash_profile
+echo "export UPTICK_CHAIN_ID=uptick_117-1" >> $HOME/.bash_profile
 echo "export UPTICK_PORT=${UPTICK_PORT}" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
@@ -80,8 +80,8 @@ curl -o $HOME/.uptickd/config/genesis.json https://raw.githubusercontent.com/Upt
 
 ## Set seeds and peers
 ```
-SEEDS='f97a75fb69d3a5fe893dca7c8d238ccc0bd66a8f@uptick-seed.p2p.brocha.in:30554'
-PEERS='eecdfb17919e59f36e5ae6cec2c98eeeac05c0f2@peer0.testnet.uptick.network:26656,178727600b61c055d9b594995e845ee9af08aa72@peer1.testnet.uptick.network:26656,f97a75fb69d3a5fe893dca7c8d238ccc0bd66a8f@uptick-seed.p2p.brocha.in:30554,94b63fddfc78230f51aeb7ac34b9fb86bd042a77@uptick-testnet-rpc.p2p.brocha.in:30556,902a93963c96589432ee3206944cdba392ae5c2d@65.108.42.105:27656'
+SEEDS='f97a75fb69d3a5fe893dca7c8d238ccc0bd66a8f@uptick.seed.brocha.in:30600'
+PEERS='170397e75ca2b0f4e9f3b1bb5d0d23f9b10f01c7@uptick-sentry-1.p2p.brocha.in:30597,c0b33353fb70d8d71dcb9c8848b3b4207bd56951@uptick-sentry-2.p2p.brocha.in:30598,23e76540bea9b6851b92e280d7e0c123a0d49521@uptick-sentry-3.p2p.brocha.in:30599,94b63fddfc78230f51aeb7ac34b9fb86bd042a77@uptick-rpc.p2p.brocha.in:30601,f97a75fb69d3a5fe893dca7c8d238ccc0bd66a8f@uptick.seed.brocha.in:30600,48e7e8ca23b636f124e70092f4ba93f98606f604@54.37.129.164:55056,8ecd3260a19d2b112f6a84e0c091640744ec40c5@185.165.241.20:26656,8e924a598a06e29c9f84a0d68b6149f1524c1819@57.128.109.11:26656,05733da50967e3955e11665b1901d36291dfaee@65.108.195.30:21656,ed8af2e21ca079d722dd2222d93c18d18373401c@65.109.94.225:26656,d9bfa29e0cf9c4ce0cc9c26d98e5d97228f93b0b@uptick.rpc.kjnodes.com:15656,400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc@uptick.rpc.kjnodes.com:15659,90c0c03d27e5b4354bffb709d28340f2657ca1c7@138.201.121.185:26679,03d4bd74d72794fefc260008943d48dc502b7518@mainnet-uptick.konsortech.xyz:34656,d1e829e41b150445126e20dc91f4fc887d5be97d@65.109.112.29:28656,91c92,d4c8db525c22abf3ad005b228874cdab9e@54.174.83.27:26656,0b730506f313e19ae3b7d2815a33558ecefec066@uptick-peer-1.kalia.network:17656,14ca9d73314dd519bc0b0be8511c88f85fe6873e@uptick-peer-2.kalia.network:17656'
 sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.uptickd/config/config.toml
 ```
 
@@ -111,7 +111,7 @@ sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $
 
 ## Set minimum gas price
 ```
-sed -i -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0auptick\"/" $HOME/.uptickd/config/app.toml
+sed -i -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.0001auptick\"/" $HOME/.uptickd/config/app.toml
 ```
 
 ## Enable prometheus
