@@ -24,7 +24,7 @@ echo "export NODENAME=$NODENAME" >> $HOME/.bash_profile
 if [ ! $WALLET ]; then
 	echo "export WALLET=wallet" >> $HOME/.bash_profile
 fi
-echo "export NOIS_CHAIN_ID=nois-testnet-004" >> $HOME/.bash_profile
+echo "export NOIS_CHAIN_ID=nois-1" >> $HOME/.bash_profile
 echo "export NOIS_PORT=${NOIS_PORT}" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
@@ -58,7 +58,7 @@ fi
 cd $HOME
 git clone https://github.com/noislabs/noisd.git 
 cd noisd
-git checkout v0.6.0
+git checkout v1.0.0
 make install
 ```
 ## Checking the version, should show 0.6.0 
@@ -80,13 +80,13 @@ noisd init $NODENAME --chain-id $NOIS_CHAIN_ID
 
 ## Download genesis and addrbook
 ```
-wget -qO $HOME/.noisd/config/genesis.json "https://raw.githubusercontent.com/noislabs/networks/nois-testnet-004.final.2/nois-testnet-004/genesis.json"
+wget -qO $HOME/.noisd/config/genesis.json "https://raw.githubusercontent.com/noislabs/networks/nois1.final.1/nois-1/genesis.json"
 ```
 
 ## Set seeds and peers
 ```
-SEEDS="ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@testnet-seeds.polkachu.com:17356,babc3f3f7804933265ec9c40ad94f4da8e9e0017@testnet-seed.rhinostake.com:17356"
-PEERS="5ecd40831e453845587cbd03534e68a7b9fc3576@nois-testnet-peer.itrocket.net:21656,0154634ac7c81382fb2dc4017d1127a8ed0c0aec@65.108.254.238:26656,7bf392b33faa03a68c83c933623c84cdfbcb5a0e@178.63.8.245:60656,8aa378cf04c5eb13943c765c9b8f63b5f263b7e9@89.116.27.24:26956"
+SEEDS=""
+PEERS="PEERS=3c5926d0b4b8750f16f6495063e6d762b2556d1e@65.21.122.47:27656,f9c01cefd0f119b29b72c96bd84f37bb9d273874@65.108.6.45:61456,2e1d9305a5be27fc708ea7bc2fade939be1259e6@65.108.82.62:51656,e84cbe410271d84b2968c46881522bd3e9726898@144.76.30.36:15663,08f825cbea77a7e4e23f05d7372e3e6c97dfcca5@65.108.224.156:26656,5c75e139557a96bc660f39c58568b07943922c48@159.148.146.132:26656,91952caf57ac1c26738f069d2e79ca9b539f641d@135.181.198.17:26656,7502abfa0929a2469f10696f6f309c7e7c5555ab@95.217.83.28:17356,5dbe16d3eb7a0d0ef74aacb7c1958af6072d3644@65.108.66.34:27756,871066c94ef32f061f5f3db4d7a6d94b38d73c0f@65.109.92.240:40136,23d7872bdd8b1bf80b52cb20da57b88a4935bc3d@65.109.30.197:22656,1d3861fb38164385d5b98c4cf4e35452bab403cc@149.102.146.216:26656,7e7c9d5a5b575f00f82a960db608284854cf4c4d@85.10.207.188:26656,374615fcb23cfbd30a59a2b904cf675d9b93b7e0@78.46.61.117:01656,ae02b0a36568a1f2be71bd98840aae333d1e3147@51.159.195.168:46656,78c9915ae359907266e0eb713b911bdae21b4876@136.243.103.32:26656,c10bacf94b9a70fa57acfa1aaa4498b84eb4109e@195.201.243.40:17356,b5058b5422c6bdba55eafac46cc23731288f42c8@130.255.170.126:26656,c695f41458b08fe87729beffa513f1c38d20d1db@193.70.33.64:17356,ed0cce5194ebefdf2f4d9301efc9a12101c35aa2@57.128.163.232:26656,9d21af60ad2568ffcb55a0bd0eb03b6cfa2644c5@49.12.120.113:26656,9741a97c632f623cdbbd8a91ef4bd18bfd01059a@5.9.79.121:17656,8cce0e919b1a7c42086a712748c8e84d7d7cd9ac@135.181.155.14:26656,d4db7bb58fda20fdba8b3b752cd5d15d68ec7980@54.91.95.247:26656,0cf59ab91e4a96d6e5427d903644edd18d9421d1@142.132.248.138:26786,763f4cd38f0685616b6657d9a34c1cdbf01ca90c@212.23.222.109:26456,fefa1d14781af7cd0067c3fe14f8c119cc9afadf@38.146.3.180:17356,178c52ade4c56f40110766fee09642513ee12a9c@216.128.134.36:17356,d4f30672ef58f234fd13b503f7ca3d32ffc4e7a2@45.63.104.164:26656,eeb51b9e6c7d6de977e3c6419f3bba78263b4b7e@192.99.32.49:26656,1f11007b46c24a24cdceba685e6c47d783ba2a09@46.4.50.247:51656,891d736102e005c83147af14f7a4819dcb5bccd2@65.21.62.231:19656,b26e5ac4afbadf96ad31ee3aeb5e6557f2894037@65.108.199.222:30656,0371e0701ba6aaf231d147d49cdd67735d64495a@65.109.104.118:60656,ca92abdc4599dd91dd63e689c64c468df5425f2c@95.216.100.99:51656,dac094230205ee1f49b42ac0ace9d95c3578d7e7@88.198.18.88:32656,08db9ae3198ac1e0fe33333dcaec949a274b6d75@95.31.16.222:26656,497dff4750970f8d142c9c61da4acee0e3ff76c4@141.95.155.224:12156"
 sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.noisd/config/config.toml
 ```
 
