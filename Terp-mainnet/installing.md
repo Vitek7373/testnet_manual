@@ -65,12 +65,12 @@ make install
 ```
 terpd version --long
 ```
-#commit: 22f9b2992a9a113bff7b923f7f39c46ae0f61857
-#cosmos_sdk_version: v0.47.1
-#go: go version go1.20.2 linux/amd64
-#name: terp
-#server_name: terpd
-#version: 1.0.0
+ commit: 22f9b2992a9a113bff7b923f7f39c46ae0f61857
+ cosmos_sdk_version: v0.47.1
+ go: go version go1.20.2 linux/amd64
+ name: terp
+ server_name: terpd
+ version: 1.0.0
 
 ## Config app
 ```
