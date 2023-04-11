@@ -78,7 +78,11 @@ terpd init $NODENAME --chain-id $TERP_CHAIN_ID
 ```
 curl -s  https://raw.githubusercontent.com/terpnetwork/mainnet/main/morocco-1/genesis.json > ~/.terp/config/genesis.json
 ```
-
+## Genesis sha256
+```
+sha256sum ~/.terp/config/genesis.json
+```
+The output should be like this: ab6c68c50d45cb9a145edf6b37c05cb9eefc2a0488d08498b8f827c2471ba843 genesis.json
 ## Set seeds and peers
 ```
 SEEDS=""
