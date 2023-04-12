@@ -28,11 +28,8 @@ You can follow this [guide](https://github.com/Vitek7373/testnet_manual/blob/mai
 ## Post installation
 
 When installation is finished please load variables into system
-```
-source $HOME/.bash_profile
-```
 
-Next you have to make sure your validator is syncing blocks. You can use command below to check synchronization status
+Next, you need to make sure that your node synchronizes the blocks. You can use command below to check synchronization status
 ```
 terpd status 2>&1 | jq .SyncInfo
 ```
