@@ -6,7 +6,7 @@
   <img height="150" height="auto" src="https://github.com/Vitek7373/testnet_manual/blob/main/Terp-mainnet/terplogo.png">
 </p>
 
-# terp node setup for maineet — morocco-1
+### Terp node setup for maineet — morocco-1
 
 Official documentation:
 >- [Validator setup instructions](https://github.com/terpnetwork/mainnet/tree/main/morocco-1)
