@@ -120,7 +120,7 @@ sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $
 
 ## Set minimum gas price and timeout commit
 ```
-sed -i -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.05uthiol\"/" $HOME/.terp/config/app.toml
+sed -i -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.005uthiol\"/" $HOME/.terp/config/app.toml
 ```
 
 ## Enable prometheus
