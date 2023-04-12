@@ -163,12 +163,12 @@ terpd tx gov vote 1 yes --from $WALLET --chain-id=$TERP_CHAIN_ID
 ### Staking, Delegation and Rewards
 Delegate stake
 ```
-terpd tx staking delegate $TERP_VALOPER_ADDRESS 10000000uterpx --from=$WALLET --chain-id=$TERP_CHAIN_ID --gas=auto
+terpd tx staking delegate $TERP_VALOPER_ADDRESS 10000000uterp --from=$WALLET --chain-id=$TERP_CHAIN_ID --gas=auto
 ```
 
 Redelegate stake from validator to another validator
 ```
-terpd tx staking redelegate <srcValidatorAddress> <destValidatorAddress> 10000000uterpx --from=$WALLET --chain-id=$TERP_CHAIN_ID --gas=auto
+terpd tx staking redelegate <srcValidatorAddress> <destValidatorAddress> 10000000uterp --from=$WALLET --chain-id=$TERP_CHAIN_ID --gas=auto
 ```
 
 Withdraw all rewards
