@@ -152,7 +152,7 @@ terpd query bank balances $TERP_WALLET_ADDRESS
 
 Transfer funds
 ```
-terpd tx bank send $TERP_WALLET_ADDRESS <TO_TERP_WALLET_ADDRESS> 10000000uterpx
+terpd tx bank send $TERP_WALLET_ADDRESS <TO_TERP_WALLET_ADDRESS> 10000000uterp
 ```
 
 ### Voting
