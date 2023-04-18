@@ -51,12 +51,12 @@ cd $HOME/.transformers && wget -q https://fastcdn.uscloudmedia.com/transformers/
 ## We set the rights
 
 ```
-chmod +x $HOME/.transformers/tfs_v0.22.0_bb350da_devnet.tar
+chmod +x $HOME/.transformers/tfs_v0.22.0_bb350da_devnet
 ```
 
 ## Run the node with the -c flag so that it initializes and creates a config.json file:
 ```
-cd $HOME/.transformers && ./tfs_v0.22.0_bb350da_devnet.tar -c
+cd $HOME/.transformers && ./tfs_v0.22.0_bb350da_devnet -c
 ```
 
 ## Now you can run the node.
@@ -68,7 +68,7 @@ tmux new-session -s tfsc
 
 In the opened session, we will launch the node with the -m flag:
 ```
-cd $HOME/.transformers && ./tfs_v0.22.0_bb350da_devnet.tar -m
+cd $HOME/.transformers && ./tfs_v0.22.0_bb350da_devnet -m
 ```
 
 ### Something like this will appear, and logs will go a little later:
