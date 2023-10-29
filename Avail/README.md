@@ -1,5 +1,5 @@
 <p style="font-size:14px" align="right">
-<a href="https://discord.gg/d27tSnnNSu" target="_blank">Join Nois discord <img src="https://github.com/Vitek7373/testnet_manual/blob/main/Avail/availlogo.png" width="25"/></a>
+<a href="https://discord.gg/d27tSnnNSu" target="_blank">Join Avail discord <img src="https://github.com/Vitek7373/testnet_manual/blob/main/Avail/availlogo.png" width="25"/></a>
 </p>
 
 
