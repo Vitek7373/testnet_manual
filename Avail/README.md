@@ -87,3 +87,10 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 EOF
 ```
+
+## Register and start service
+```
+sudo systemctl daemon-reload
+sudo systemctl enable availd
+sudo systemctl restart availd && sudo journalctl -u availd -f -o cat
+```
