@@ -78,7 +78,7 @@ After=network-online.target
 
 [Service]
 User=$USER
-ExecStart=/root/avail/target/release/data-avail --base-path `pwd`/data --chain kate --name "$NODENAME"
+ExecStart=/root/avail/target/release/data-avail --base-path `pwd`/data --chain $AVAIL_CHAIN_ID --name "$NODENAME"
 Restart=on-failure
 RestartSec=3
 LimitNOFILE=65535
