@@ -31,7 +31,7 @@ sudo apt update && sudo apt upgrade -y
 
 ## Install dependencies
 ```
-sudo apt install curl build-essential git wget jq make gcc tmux -y
+sudo apt install curl build-essential git wget jq make gcc tmux unzip -y
 ```
 ## Software requirements：
 Operation system：Run on CentOS 7、ubuntu-22.04-desktop-amd64 system.
@@ -46,17 +46,17 @@ cd $HOME && mkdir .transformers
 
 ## Download binary executable
 ```
-cd $HOME/.transformers && wget -q https://fastcdn.uscloudmedia.com/transformers/test/tfs_v0.22.0_bb350da_devnet.tar && tar -xvf tfs_v0.22.0_bb350da_devnet.tar
+cd $HOME/.transformers && wget -q https://fastcdn.uscloudmedia.com/transformers/formal/tfs_v0.33.1_92c26db_testnet.zip && unzip tfs_v0.33.1_92c26db_testnet.zip
 ```
 ## We set the rights
 
 ```
-chmod +x $HOME/.transformers/tfs_v0.22.0_bb350da_devnet
+chmod +x $HOME/.transformers/tfs_v0.33.0_618b167_testnet
 ```
 
 ## Run the node with the -c flag so that it initializes and creates a config.json file:
 ```
-cd $HOME/.transformers && ./tfs_v0.22.0_bb350da_devnet -c
+cd $HOME/.transformers && ./tfs_v0.33.0_618b167_testnet -c
 ```
 
 ## Now you can run the node.
@@ -68,7 +68,7 @@ tmux new-session -s tfsc
 
 In the opened session, we will launch the node with the -m flag:
 ```
-cd $HOME/.transformers && ./tfs_v0.22.0_bb350da_devnet -m
+cd $HOME/.transformers && ./tfs_v0.33.0_618b167_testnet -m
 ```
 
 ### Something like this will appear, and logs will go a little later:
