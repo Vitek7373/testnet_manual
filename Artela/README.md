@@ -14,7 +14,7 @@ Official documentation:
 >- [Validator setup instructions](https://docs.artela.network/develop/node/run-full-node)
 
 Explorer:
->-  [Explorer](https://testnet.itrocket.net/artela)
+>-  [Explorer](https://betanet-scan.artela.network/)
 
 
 ## Hardware Requirements
