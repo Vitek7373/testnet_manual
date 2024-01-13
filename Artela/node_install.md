@@ -80,7 +80,7 @@ artelad init $NODENAME --chain-id $ARTELA_CHAIN_ID
 
 ## Download genesis and addrbook
 ```
-wget -qO $HOME/.noisd/config/genesis.json "https://github.com/Vitek7373/testnet_manual/blob/main/Artela/genesis.json"
+wget -qO $HOME/.artelad/config/genesis.json "https://github.com/Vitek7373/testnet_manual/blob/main/Artela/genesis.json"
 ```
 
 ## Set seeds and peers
