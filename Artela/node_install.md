@@ -86,7 +86,7 @@ wget -qO $HOME/.noisd/config/genesis.json "https://github.com/Vitek7373/testnet_
 ## Set seeds and peers
 ```
 SEEDS=""
-PEERS=""
+PEERS="bec6934fcddbac139bdecce19f81510cb5e02949@47.254.24.106:26656,32d0e4aec8d8a8e33273337e1821f2fe2309539a@47.88.58.36:26656,1bf5b73f1771ea84f9974b9f0015186f1daa4266@47.251.14.47:26656"
 sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.artelad/config/config.toml
 ```
 
