@@ -81,7 +81,7 @@ source $HOME/.bash_profile
 
 
 ### Create validator
-Before creating validator please make sure that you have at least 1 uart (1 uart is equal to 1000000 uart) and your node is synchronized
+Before creating validator please make sure that you have at least 1 uart (1 uart is equal to 1000000000000000000 uart) and your node is synchronized
 
 To check your wallet balance:
 ```
