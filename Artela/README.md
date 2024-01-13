@@ -218,7 +218,7 @@ artelad tx distribution withdraw-rewards $ARTELA_VALOPER_ADDRESS --from=$WALLET 
 Edit validator
 ```
 artelad tx staking edit-validator \
-  --moniker=$NODENAME \
+  --new-moniker=$NODENAME \
   --identity=<your_keybase_id> \
   --website="<your_website>" \
   --details="<your_validator_description>" \
