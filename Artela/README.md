@@ -92,7 +92,7 @@ artelad query bank balances $ARTELA_WALLET_ADDRESS
 To create your validator run command below
 ```
 artelad tx staking create-validator \
-  --amount 100000000uart \
+  --amount 100000000000000000uart \
   --from $WALLET \
   --commission-max-change-rate "0.01" \
   --commission-max-rate "0.2" \
