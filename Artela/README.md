@@ -196,12 +196,12 @@ artelad tx gov vote 1 yes --from $WALLET --chain-id=$ARTELA_CHAIN_ID
 ### Staking, Delegation and Rewards
 Delegate stake
 ```
-artelad tx staking delegate $ARTELA_VALOPER_ADDRESS 10000000uart --from=$WALLET --chain-id=$ARTELA_CHAIN_ID --gas=auto
+artelad tx staking delegate $ARTELA_VALOPER_ADDRESS 1000000000000000000uart --from=$WALLET --chain-id=$ARTELA_CHAIN_ID --gas=auto
 ```
 
 Redelegate stake from validator to another validator
 ```
-artelad tx staking redelegate <srcValidatorAddress> <destValidatorAddress> 10000000uart --from=$WALLET --chain-id=$ARTELA_CHAIN_ID --gas=auto
+artelad tx staking redelegate <srcValidatorAddress> <destValidatorAddress> 1000000000000000000uart --from=$WALLET --chain-id=$ARTELA_CHAIN_ID --gas=auto
 ```
 
 Withdraw all rewards
