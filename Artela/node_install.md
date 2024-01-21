@@ -58,10 +58,10 @@ fi
 cd $HOME
 git clone https://github.com/artela-network/artela.git 
 cd artela
-git checkout v0.4.7-rc4
+git checkout v0.4.7-rc6
 make install
 ```
-## Checking the version, should show 0.6.0 
+## Checking the version, should show v0.4.7-rc6 
 ```
 artelad version
 ```
