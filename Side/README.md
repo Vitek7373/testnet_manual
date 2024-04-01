@@ -1,5 +1,5 @@
 <p style="font-size:14px" align="right">
-<a href="https://discord.gg/sideprotocol" target="_blank">Join Side Protocol discord <img src="logo.png" width="25"/></a>
+<a href="https://discord.gg/sideprotocol" target="_blank">Join Side Protocol discord <img src="https://github.com/Vitek7373/testnet_manual/blob/main/Side/logo.png" width="25"/></a>
 </p>
 
 
