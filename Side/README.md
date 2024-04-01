@@ -1,11 +1,11 @@
 <p style="font-size:14px" align="right">
-<a href="https://discord.gg/sideprotocol" target="_blank">Join Side Protocol discord <img src="https://github.com/Vitek7373/testnet_manual/blob/main/Side/logo.png" width="25"/></a>
+<a href="https://discord.gg/sideprotocol" target="_blank">Join Side Protocol discord <img src="https://github.com/Vitek7373/testnet_manual/blob/main/Side/logo.png" width="50"/></a>
 </p>
 
 
 
 <p align="center">
-  <img height="120" height="auto" src="logo.png">
+  <img height="130" height="auto" src="https://github.com/Vitek7373/testnet_manual/blob/main/Side/logo.png">
 </p>
 
 # Side node setup for testnet — side-testnet-3
