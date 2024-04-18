@@ -42,7 +42,7 @@ sudo apt install curl build-essential git wget jq make gcc tmux chrony -y
 ## Install go
 ```
 if ! [ -x "$(command -v go)" ]; then
-  ver="1.20.2"
+  ver="1.21.9"
   cd $HOME
   wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz"
   sudo rm -rf /usr/local/go
