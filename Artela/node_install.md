@@ -8,7 +8,7 @@
   <img height="130" height="auto" src="https://github.com/Vitek7373/testnet_manual/blob/main/Artela/logo%20artela.png">
 </p>
 
-# Manual node setup "Mainnet"
+# Manual node setup "Testnet"
 If you want to setup fullnode manually follow the steps below
 
 ## Setting up vars
