@@ -61,7 +61,7 @@ cd sidechain
 git checkout v0.7.0
 make install
 ```
-## Checking the version, should show 0.6.0 
+## Checking the version, should show 0.7.0 
 ```
 sided version
 ```
