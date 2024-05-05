@@ -24,7 +24,7 @@ echo "export NODENAME=$NODENAME" >> $HOME/.bash_profile
 if [ ! $WALLET ]; then
 	echo "export WALLET=wallet" >> $HOME/.bash_profile
 fi
-echo "export SIDE_CHAIN_ID=side-testnet-3" >> $HOME/.bash_profile
+echo "export SIDE_CHAIN_ID=S2-testnet-1" >> $HOME/.bash_profile
 echo "export SIDE_PORT=${SIDE_PORT}" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
@@ -58,10 +58,10 @@ fi
 cd $HOME
 git clone -b dev https://github.com/sideprotocol/sidechain
 cd sidechain
-git checkout v0.7.0
+git checkout v0.8.0
 make install
 ```
-## Checking the version, should show 0.7.0 
+## Checking the version, should show 0.8.0 
 ```
 sided version
 ```
@@ -80,13 +80,13 @@ sided init $NODENAME --chain-id $SIDE_CHAIN_ID
 
 ## Download genesis and addrbook
 ```
-wget -qO $HOME/.side/config/genesis.json "https://github.com/sideprotocol/testnet/blob/main/side-testnet-3/genesis.json"
+wget -qO $HOME/.side/config/genesis.json "https://github.com/sideprotocol/testnet/raw/main/S2-testnet-1/genesis.json"
 ```
 
 ## Set seeds and peers
 ```
 SEEDS=""
-PEERS="027ef6300590b1ca3a2b92a274247e24537bd9c9@65.109.65.248:49656"
+PEERS="43cb99189637d1e35b8f11c1580cff305157c94b@54.249.68.205:26656,519453a49e25826c04c9d2779ec7b5971876665d@138.201.51.154:32004,6aa033b16b4eea79195febbf87fd21f51b1a1bde@46.4.55.46:20656,df3cb7c20c0ca87926a06424a4aebe5cc485301d@54.39.107.180:45656,70c139e670cbd4456cdca20953960e600e90c9f2@65.108.68.214:45656,db6fc589d5db96b5ff4e733c16afd4a00488ae96@168.119.10.134:22956,af499b4f78ac7ecf0c340242b973d7592e98db62@213.199.39.54:45656,a5fd292715327ca65a8c305fe176166cbe0b8207@146.59.53.93:45656,59fa36770ef7f6cdbb4fe9c70c13b501c1a6b258@95.214.55.138:4656"
 sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.side/config/config.toml
 ```
 
