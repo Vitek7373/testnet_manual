@@ -8,7 +8,7 @@
   <img height="130" height="auto" src="https://github.com/Vitek7373/testnet_manual/blob/main/Side/logo.png">
 </p>
 
-# Side node setup for testnet — side-testnet-3
+# Side node setup for testnet — S2-testnet-1
 
 Official documentation:
 >- [Validator setup instructions](https://docs2.nois.network/run_a_node.html)
@@ -92,7 +92,7 @@ sided query bank balances $SIDE_WALLET_ADDRESS
 To create your validator run command below
 ```
 sided tx staking create-validator \
-  --amount 100000000uside \
+  --amount 1000000uside \
   --from $WALLET \
   --commission-max-change-rate "0.01" \
   --commission-max-rate "0.2" \
@@ -196,12 +196,12 @@ sided tx gov vote 1 yes --from $WALLET --chain-id=$SIDE_CHAIN_ID
 ### Staking, Delegation and Rewards
 Delegate stake
 ```
-sided tx staking delegate $SIDE_VALOPER_ADDRESS 10000000uside --from=$WALLET --chain-id=$SIDE_CHAIN_ID --gas=auto
+sided tx staking delegate $SIDE_VALOPER_ADDRESS 1000000uside --from=$WALLET --chain-id=$SIDE_CHAIN_ID --gas=auto
 ```
 
 Redelegate stake from validator to another validator
 ```
-sided tx staking redelegate <srcValidatorAddress> <destValidatorAddress> 10000000uside --from=$WALLET --chain-id=$SIDE_CHAIN_ID --gas=auto
+sided tx staking redelegate <srcValidatorAddress> <destValidatorAddress> 1000000uside --from=$WALLET --chain-id=$SIDE_CHAIN_ID --gas=auto
 ```
 
 Withdraw all rewards
