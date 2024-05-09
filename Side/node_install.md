@@ -80,7 +80,7 @@ sided init $NODENAME --chain-id $SIDE_CHAIN_ID
 
 ## Download genesis and addrbook
 ```
-wget -qO $HOME/.side/config/genesis.json "https://github.com/sideprotocol/testnet/raw/main/S2-testnet-1/genesis.json"
+wget -qO $HOME/.side/config/genesis.json "https://github.com/sideprotocol/testnet/raw/main/S2-testnet-2/genesis.json"
 ```
 
 ## Set seeds and peers
