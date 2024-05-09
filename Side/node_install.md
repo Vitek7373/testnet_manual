@@ -24,7 +24,7 @@ echo "export NODENAME=$NODENAME" >> $HOME/.bash_profile
 if [ ! $WALLET ]; then
 	echo "export WALLET=wallet" >> $HOME/.bash_profile
 fi
-echo "export SIDE_CHAIN_ID=S2-testnet-1" >> $HOME/.bash_profile
+echo "export SIDE_CHAIN_ID=S2-testnet-2" >> $HOME/.bash_profile
 echo "export SIDE_PORT=${SIDE_PORT}" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
@@ -58,10 +58,10 @@ fi
 cd $HOME
 git clone -b dev https://github.com/sideprotocol/sidechain
 cd sidechain
-git checkout v0.8.0
+git checkout v0.8.1
 make install
 ```
-## Checking the version, should show 0.8.0 
+## Checking the version, should show 0.8.1
 ```
 sided version
 ```
