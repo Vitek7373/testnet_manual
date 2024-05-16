@@ -129,7 +129,7 @@ After=network-online.target
 
 [Service]
 User=$USER
-ExecStart=$(which initia) start --home $HOME/.initia
+ExecStart=$(which initiad) start --home $HOME/.initia
 Restart=on-failure
 RestartSec=3
 LimitNOFILE=65535
