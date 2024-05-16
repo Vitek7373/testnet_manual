@@ -181,39 +181,39 @@ initiad query bank balances $INITIA_WALLET_ADDRESS
 
 Transfer funds
 ```
-initiad tx bank send $INITIA_WALLET_ADDRESS <TO_INITIA_WALLET_ADDRESS> 5000uinit --gas=auto
+initiad tx bank send $INITIA_WALLET_ADDRESS <TO_INITIA_WALLET_ADDRESS> 5000uinit --gas=auto --gas-prices 0.15uinit
 ```
 
 ### Voting
 ```
-initiad tx gov vote 1 yes --from $WALLET --chain-id=$INITIA_CHAIN_ID --gas=auto
+initiad tx gov vote 1 yes --from $WALLET --chain-id=$INITIA_CHAIN_ID --gas=auto --gas-prices 0.15uinit
 ```
 
 ### Staking, Delegation and Rewards
 Delegate stake
 ```
-initiad tx staking delegate $INITIA_VALOPER_ADDRESS 5000000uinit --from=$WALLET --chain-id=$INITIA_CHAIN_ID --gas=auto
+initiad tx mstaking delegate $INITIA_VALOPER_ADDRESS 5000000uinit --from=$WALLET --chain-id=$INITIA_CHAIN_ID --gas=auto --gas-prices 0.15uinit
 ```
 
 Redelegate stake from validator to another validator
 ```
-initiad tx staking redelegate <srcValidatorAddress> <destValidatorAddress> 5000000uinit --from=$WALLET --chain-id=$INITIA_CHAIN_ID --gas=auto
+initiad tx mstaking redelegate <srcValidatorAddress> <destValidatorAddress> 5000000uinit --from=$WALLET --chain-id=$INITIA_CHAIN_ID --gas=auto --gas-prices 0.15uinit
 ```
 
 Withdraw all rewards
 ```
-initiad tx distribution withdraw-all-rewards --from=$WALLET --chain-id=$INITIA_CHAIN_ID --gas=auto
+initiad tx distribution withdraw-all-rewards --from=$WALLET --chain-id=$INITIA_CHAIN_ID --gas=auto --gas-prices 0.15uinit
 ```
 
 Withdraw rewards with commision
 ```
-initiad tx distribution withdraw-rewards $INITIA_VALOPER_ADDRESS --from=$WALLET --commission --chain-id=$INITIA_CHAIN_ID --gas=auto
+initiad tx distribution withdraw-rewards $INITIA_VALOPER_ADDRESS --from=$WALLET --commission --chain-id=$INITIA_CHAIN_ID --gas=auto --gas-prices 0.15uinit
 ```
 
 ### Validator management
 Edit validator
 ```
-initiad tx staking edit-validator \
+initiad tx mstaking edit-validator \
   --moniker=$NODENAME \
   --identity=<your_keybase_id> \
   --website="<your_website>" \
@@ -221,6 +221,7 @@ initiad tx staking edit-validator \
   --chain-id=$INITIA_CHAIN_ID \
   --from=$WALLET \
   --gas=auto
+  --gas-prices 0.15uinit
 ```
 
 Unjail validator
@@ -230,6 +231,7 @@ initiad tx slashing unjail \
   --from=$WALLET \
   --chain-id=$INITIA_CHAIN_ID \
   --gas=auto
+  --gas-prices 0.15uinit
 ```
 
 ### Delete node
