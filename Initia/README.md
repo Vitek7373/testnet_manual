@@ -7,7 +7,7 @@
   <img height="100" height="auto" src="https://github.com/Vitek7373/testnet_manual/blob/main/Initia/initia.png">
 </p>
 
-# Uptick node setup for Testnet — initiation-1
+# Initia node setup for Testnet — initiation-1
 
 Official documentation:
 >- [Validator setup instructions](https://docs.initia.xyz/run-initia-node/running-initia-node/becoming-a-validator)
@@ -60,7 +60,7 @@ source $HOME/.bash_profile
 
 
 ### Create validator
-Before creating validator please make sure that you have at least 1 init (1 uptick is equal to 1000000 uinit) and your node is synchronized
+Before creating validator please make sure that you have at least 1 init (1 init is equal to 1000000 uinit) and your node is synchronized
 
 To check your wallet balance:
 ```
@@ -100,7 +100,7 @@ sudo ufw default allow outgoing
 sudo ufw default deny incoming
 sudo ufw allow ssh/tcp
 sudo ufw limit ssh/tcp
-sudo ufw allow ${UPTICK_PORT}656,${UPTICK_PORT}660/tcp
+sudo ufw allow ${INITIA_PORT}656,${INITIA_PORT}660/tcp
 sudo ufw enable
 ```
 
