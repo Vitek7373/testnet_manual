@@ -241,7 +241,7 @@ sudo systemctl stop initiad
 sudo systemctl disable initiad
 sudo rm /etc/systemd/system/initia* -rf
 sudo rm $(which initiad) -rf
-sudo rm $HOME/.initiad* -rf
+sudo rm $HOME/.initia* -rf
 sudo rm $HOME/initia -rf
 sed -i '/INITIA_/d' ~/.bash_profile
 ```
