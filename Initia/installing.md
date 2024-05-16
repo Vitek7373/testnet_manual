@@ -1,10 +1,10 @@
 <p style="font-size:14px" align="right">
-<a href="https://discord.gg/initia" target="_blank">Join Initia discord <img src="https://github.com/Vitek7373/testnet_manual/blob/main/initia.png" width="30"/></a>
+<a href="https://discord.gg/initia" target="_blank">Join Initia discord <img src="https://github.com/Vitek7373/testnet_manual/blob/main/Initia/initia.png" width="30"/></a>
 </p>
 
 
 <p align="center">
-  <img height="100" height="auto" src="https://github.com/Vitek7373/testnet_manual/blob/main/initia.png">
+  <img height="100" height="auto" src="https://github.com/Vitek7373/testnet_manual/blob/main/Initia/initia.png">
 </p>
 
 # Manual node setup
