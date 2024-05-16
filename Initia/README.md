@@ -81,7 +81,8 @@ initiad tx mstaking create-validator \
   --identity=<your_keybase_id> \
   --details="<your_validator_description>" \
   --chain-id $INITIA_CHAIN_ID \
-  --gas=auto
+  --gas=auto \
+  --gas-prices 0.15uinit
 ```
 
 ## Security
