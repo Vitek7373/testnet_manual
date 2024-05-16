@@ -70,13 +70,12 @@ initiad query bank balances $INITIA_WALLET_ADDRESS
 
 To create your validator run command below
 ```
-initiad tx staking create-validator \
+initiad tx mstaking create-validator \
   --amount 1000000uinit \
   --from $WALLET \
   --commission-max-change-rate "0.01" \
   --commission-max-rate "0.2" \
   --commission-rate "0.07" \
-  --min-self-delegation "1" \
   --pubkey  $(initiad tendermint show-validator) \
   --moniker $NODENAME \
   --identity=<your_keybase_id> \
