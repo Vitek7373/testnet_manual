@@ -42,7 +42,7 @@ sudo apt install curl build-essential git wget jq make gcc tmux chrony -y
 ## Install go
 ```
 if ! [ -x "$(command -v go)" ]; then
-  ver="1.20.2"
+  ver="1.22.2"
   cd $HOME
   wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz"
   sudo rm -rf /usr/local/go
@@ -58,19 +58,19 @@ fi
 cd $HOME && rm -rf terp-core
 git clone https://github.com/terpnetwork/terp-core.git
 cd terp-core
-git checkout v1.0.0
+git checkout v4.2.2
 make install
 ```
 ## Checking the version
 ```
 terpd version --long
 ```
- commit: 22f9b2992a9a113bff7b923f7f39c46ae0f61857
+ commit: 587f6f4febbe0b9ee9ae99b2af1e9684ca511a17
  cosmos_sdk_version: v0.47.1
- go: go version go1.20.2 linux/amd64
+ go: go version go1.22.2 linux/amd64
  name: terp
  server_name: terpd
- version: 1.0.0
+ version: 4.2.2
 
 ## Config app
 ```
