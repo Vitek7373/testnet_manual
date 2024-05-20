@@ -63,9 +63,8 @@ make install
 
 ## Config app
 ```
-initiad config chain-id $INITIA_CHAIN_ID
-initiad config keyring-backend test
-initiad config node tcp://localhost:${INITIA_PORT}657
+initiad config set client chain-id $INITIA_CHAIN_ID
+initiad config set client node tcp://localhost:${INITIA_PORT}657
 ```
 
 ## Init app
