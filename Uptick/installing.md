@@ -41,7 +41,7 @@ sudo apt install curl build-essential git wget jq make gcc tmux -y
 ## Install go
 ```
 if ! [ -x "$(command -v go)" ]; then
-  ver="1.18.2"
+  ver="1.22.2"
   cd $HOME
   wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz"
   sudo rm -rf /usr/local/go
@@ -57,7 +57,7 @@ fi
 cd $HOME
 git clone https://github.com/UptickNetwork/uptick.git
 cd uptick
-git checkout v0.2.4
+git checkout v0.2.19
 make install
 ```
 
@@ -75,13 +75,13 @@ uptickd init $NODENAME --chain-id $UPTICK_CHAIN_ID
 
 ### Download Genesis
 ```
-curl -o $HOME/.uptickd/config/genesis.json https://raw.githubusercontent.com/UptickNetwork/uptick-testnet/main/uptick_7000-2/genesis.json
+curl -o $HOME/.uptickd/config/genesis.json https://raw.githubusercontent.com/UptickNetwork/uptick-mainnet/master/uptick_117-1/genesis.json
 ```
 
 ## Set seeds and peers
 ```
-SEEDS='f97a75fb69d3a5fe893dca7c8d238ccc0bd66a8f@uptick.seed.brocha.in:30600'
-PEERS='170397e75ca2b0f4e9f3b1bb5d0d23f9b10f01c7@uptick-sentry-1.p2p.brocha.in:30597,c0b33353fb70d8d71dcb9c8848b3b4207bd56951@uptick-sentry-2.p2p.brocha.in:30598,23e76540bea9b6851b92e280d7e0c123a0d49521@uptick-sentry-3.p2p.brocha.in:30599,94b63fddfc78230f51aeb7ac34b9fb86bd042a77@uptick-rpc.p2p.brocha.in:30601,f97a75fb69d3a5fe893dca7c8d238ccc0bd66a8f@uptick.seed.brocha.in:30600,48e7e8ca23b636f124e70092f4ba93f98606f604@54.37.129.164:55056,8ecd3260a19d2b112f6a84e0c091640744ec40c5@185.165.241.20:26656,8e924a598a06e29c9f84a0d68b6149f1524c1819@57.128.109.11:26656,05733da50967e3955e11665b1901d36291dfaee@65.108.195.30:21656,ed8af2e21ca079d722dd2222d93c18d18373401c@65.109.94.225:26656,d9bfa29e0cf9c4ce0cc9c26d98e5d97228f93b0b@uptick.rpc.kjnodes.com:15656,400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc@uptick.rpc.kjnodes.com:15659,90c0c03d27e5b4354bffb709d28340f2657ca1c7@138.201.121.185:26679,03d4bd74d72794fefc260008943d48dc502b7518@mainnet-uptick.konsortech.xyz:34656,d1e829e41b150445126e20dc91f4fc887d5be97d@65.109.112.29:28656,91c92,d4c8db525c22abf3ad005b228874cdab9e@54.174.83.27:26656,0b730506f313e19ae3b7d2815a33558ecefec066@uptick-peer-1.kalia.network:17656,14ca9d73314dd519bc0b0be8511c88f85fe6873e@uptick-peer-2.kalia.network:17656'
+SEEDS='e71bae28852a0b603f7360ec17fe91e7f065f324@uptick-mainnet-seed.itrocket.net:35656'
+PEERS='dd482d080820020b144ca2efaf128d78261dea82@uptick-mainnet-peer.itrocket.net:10656,c7abddafe697b2a75a1567e0fe274d919e5fa404@65.109.106.214:15656,b12b37802e4000862ecd683a6f7eca6ef6daf569@65.109.60.19:26656,c6ff930a14586040cd9abfa58389d43aaca162a6@65.108.198.183:28656,fadab3eb04ebb651644ba15bb8f532bb509fe0f7@95.216.202.212:27656,2cc70e14c1cdb94edce3a9f8aa149880331af29d@212.23.222.109:26356,d3107602737ec267cd963672d14068b4f30fc633@213.239.207.175:26651,35ca65b1a865b0be132eb3212d9fd3a53be7d5da@176.9.183.45:26656,90c0c03d27e5b4354bffb709d28340f2657ca1c7@138.201.121.185:26679,7a320021212d346a7e8bfd5926feb4b307e7f69b@5.9.147.22:26556,f5224d6a57ec518cd427732de1e1d55732e91640@138.201.21.62:15656,94b63fddfc78230f51aeb7ac34b9fb86bd042a77@142.132.134.181:30601,23e76540bea9b6851b92e280d7e0c123a0d49521@142.132.134.181:30599,bd2e1f218fde74045fbcff3fe36c467e7f05d7a3@198.244.165.50:21656,f058de92328b5a1ac44f45a4cd96850ebbca85bd@185.144.99.248:26656,d709d49fbf56dd9bf34463f15273a71d783c76cb@69.197.26.8:656,ada4a57a6eff26863d51847afe086544a6de1083@69.197.49.15:656,762152adcd6cc1f0537a3eded4043fc113078100@154.12.228.189:26656,7a762523ffc639de8d81d1ec40e180c6566e75db@142.132.156.99:3156,8ef5753cf3feba8f931ca771575d353556073e81@194.163.172.190:26656,e88413ee7153be8a9053165a60ad55492a8e300a@65.109.94.250:29656,ca698c533f814da69d2ad5ecd889b5790a189d05@184.174.36.212:36656,8fbfb8bff5d783df53b9ee95ab6b6e7ff708f280@65.108.134.215:32656,e8110e6c803fb4f16637ac76359fab7c605d4896@157.90.0.102:27656,3c40625cd7a8da2f27b178c1e69bcf2f1d4261a4@65.108.232.168:34656,8d9bfdb1e2657959ec641828080052d554fbe248@65.108.205.47:36656,ef9af846dcb2d25e7ccf5f7975a6d5d51fa01477@5.9.138.213:26656,446a4b3a6dcfc8f6c55dc02ce49e98936a713920@176.9.92.135:60756,91e671716f5af5e3bc7b491cf8c5933f725d4c9a@148.251.176.251:26656,34d86f3a8dfce7d8b615563c587433c65792f104@185.219.142.221:15656,c21eeb897d3fa45a81772b56038045d1d873252e@142.132.199.236:30656'
 sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.uptickd/config/config.toml
 ```
 
@@ -129,7 +129,7 @@ After=network-online.target
 
 [Service]
 User=$USER
-ExecStart=$(which uptickd) start --home $HOME/.uptickd
+ExecStart=$(which uptickd) start --home $HOME/.uptickd --chain-id uptick_117-1
 Restart=on-failure
 RestartSec=3
 LimitNOFILE=65535
