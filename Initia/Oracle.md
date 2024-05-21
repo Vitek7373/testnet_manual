@@ -66,7 +66,7 @@ make run-oracle-client
 In order to utilize the Slinky oracle data in the Initia node, the Oracle setting should be enabled in the config/app.toml file.
 
 ###############################################################################
-###                                  Oracle                                 ###
+                                    Oracle                                
 ###############################################################################
 [oracle]
 Enabled indicates whether the oracle is enabled.
