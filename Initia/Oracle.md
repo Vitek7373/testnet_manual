@@ -62,3 +62,27 @@ Upon launching the oracle, you should observe successful price retrieval from th
 ```
 make run-oracle-client
 ```
+
+
+###############################################################################
+###                                  Oracle                                 ###
+###############################################################################
+[oracle]
+# Enabled indicates whether the oracle is enabled.
+enabled = "true"
+
+# Oracle Address is the URL of the out of process oracle sidecar. This is used to
+# connect to the oracle sidecar when the application boots up. Note that the address
+# can be modified at any point, but will only take effect after the application is
+# restarted. This can be the address of an oracle container running on the same
+# machine or a remote machine.
+oracle_address = "127.0.0.1:21080"
+
+# Client Timeout is the time that the client is willing to wait for responses from
+# the oracle before timing out.
+client_timeout = "500ms"
+
+# MetricsEnabled determines whether oracle metrics are enabled. Specifically
+# this enables instrumentation of the oracle client and the interaction between
+# the oracle and the app.
+metrics_enabled = "false"
