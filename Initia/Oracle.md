@@ -62,8 +62,10 @@ Upon launching the oracle, you should observe successful price retrieval from th
 ```
 make run-oracle-client
 ```
+## Enable Oracle Vote Extension
+In order to utilize the Slinky oracle data in the Initia node, the Oracle setting should be enabled in the config/app.toml file.
 
-
+```
 ###############################################################################
 ###                                  Oracle                                 ###
 ###############################################################################
@@ -86,3 +88,4 @@ client_timeout = "500ms"
 # this enables instrumentation of the oracle client and the interaction between
 # the oracle and the app.
 metrics_enabled = "false"
+```
