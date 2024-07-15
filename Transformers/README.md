@@ -46,17 +46,17 @@ cd $HOME && mkdir .transformers
 
 ## Download binary executable
 ```
-cd $HOME/.transformers && wget -q https://fastcdn.tfsc.io/testnet/tfs_v1.0.0_830f4b9_testnet.zip && unzip tfs_v1.0.0_830f4b9_testnet.zip
+cd $HOME/.transformers && wget -q https://fastcdn.tfsc.io/testnet/tfs_v1.1.1_33471de_testnet.zip && unzip tfs_v1.1.1_33471de_testnet.zip
 ```
 ## We set the rights
 
 ```
-chmod +x $HOME/.transformers/tfs_v1.0.0_830f4b9_testnet
+chmod +x $HOME/.transformers/tfs_v1.1.1_33471de_testnet
 ```
 
 ## Run the node with the -c flag so that it initializes and creates a config.json file:
 ```
-cd $HOME/.transformers && ./tfs_v1.0.0_830f4b9_testnet -c
+cd $HOME/.transformers && ./tfs_v1.1.1_33471de_testnet -c
 ```
 
 ## Now you can run the node.
@@ -68,7 +68,7 @@ tmux new-session -s tfsc
 
 In the opened session, we will launch the node with the -m flag:
 ```
-cd $HOME/.transformers && ./tfs_v1.0.0_830f4b9_testnet -m
+cd $HOME/.transformers && ./tfs_v1.1.1_33471de_testnet -m
 ```
 
 ### Something like this will appear, and logs will go a little later:
