@@ -225,7 +225,7 @@ uptickd tx staking edit-validator \
 Unjail validator
 ```
 uptickd tx slashing unjail \
-  --broadcast-mode=block \
+  --broadcast-mode=sync \
   --from=$WALLET \
   --chain-id=$UPTICK_CHAIN_ID \
   --gas=auto
