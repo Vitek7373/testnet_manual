@@ -46,17 +46,17 @@ cd $HOME && mkdir .transformers
 
 ## Download binary executable
 ```
-cd $HOME/.transformers && wget -q https://fastcdn.tfsc.io/testnet/tfs_v1.1.1_33471de_testnet.zip && unzip tfs_v1.1.1_33471de_testnet.zip
+cd $HOME/.transformers && wget -q https://fastcdn.tfsc.io/formal/tfs_v1.0.0_48d0bb4_primarynet.zip && unzip tfs_v1.0.0_48d0bb4_primarynet.zip
 ```
 ## We set the rights
 
 ```
-chmod +x $HOME/.transformers/tfs_v1.1.1_33471de_testnet
+chmod +x $HOME/.transformers/tfs_v1.0.0_48d0bb4_primarynet
 ```
 
 ## Run the node with the -c flag so that it initializes and creates a config.json file:
 ```
-cd $HOME/.transformers && ./tfs_v1.1.1_33471de_testnet -c
+cd $HOME/.transformers && ./tfs_v1.0.0_48d0bb4_primarynet -c
 ```
 
 ## Now you can run the node.
@@ -68,7 +68,7 @@ tmux new-session -s tfsc
 
 In the opened session, we will launch the node with the -m flag:
 ```
-cd $HOME/.transformers && ./tfs_v1.1.1_33471de_testnet -m
+cd $HOME/.transformers && ./tfs_v1.0.0_48d0bb4_primarynet -m
 ```
 
 ### Something like this will appear, and logs will go a little later:
@@ -92,11 +92,11 @@ Press 1 to enter the transaction interface.
 
 # Enter the account number address of the transaction initiator.
 
-input FromAddr: 12GwpCQi7bWr8cbmU2r1aFia1rUQJDVXdo
+input FromAddr: 0x1015vsvdf5caE61550874f6B466ac42nd6e2
 
 # Enter the account address of the other party:
 
-input ToAddr: 1vkS46QffeM4sDMBBjuJBiVkMQKY7Z8Tu
+input ToAddr: 0x1015vsvdf5caE61550874f6B466ac42nd6e2
 
 
 # Enter the transaction amount
@@ -104,7 +104,7 @@ input amount: 10
 
 
 ## Next, make a backup of the key file
-The wallet file is called 153VtN5V2pG....5VVtN5.private and lies:
+The wallet file is called 0x1015vsvdf5....c42nd6e2 and lies:
 ```
 cd $HOME/.transformers/cert
 ```
